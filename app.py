@@ -8,7 +8,7 @@ df = pd.read_csv("blue_ribbon.csv")
 
 st.title("레스토랑 지도")
 
-ribbon_filter = st.slider("리본 개수", 1, 3, 2)
+ribbon_filter = st.slider("리본 개수", 0, 3, 0)
 
 filtered = df[df["ribbon_num"] >= ribbon_filter]
 
@@ -21,5 +21,6 @@ for _, row in filtered.iterrows():
     ).add_to(m)
 
 st_folium(m)
+
 
 
