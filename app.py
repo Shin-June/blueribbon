@@ -1,5 +1,5 @@
 # app.py
-import data_project.blue_ribbon.app as st
+import streamlit as st
 import pandas as pd
 import folium
 from streamlit_folium import st_folium
