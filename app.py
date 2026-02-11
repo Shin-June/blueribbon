@@ -4,7 +4,7 @@ import pandas as pd
 import folium
 from streamlit_folium import st_folium
 
-df = pd.read_csv("restaurants.csv")
+df = pd.read_csv("blue_ribbon.csv")
 
 st.title("레스토랑 지도")
 
@@ -21,3 +21,4 @@ for _, row in filtered.iterrows():
     ).add_to(m)
 
 st_folium(m)
+
